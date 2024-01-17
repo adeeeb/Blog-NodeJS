@@ -1,4 +1,3 @@
-```markdown
 # Blog README
 
 Welcome to our cutting-edge blog platform! Here, we share valuable insights and information crafted with precision and powered by the latest technologies.
@@ -42,4 +41,3 @@ We have seamlessly integrated the [CKEditor](https://ckeditor.com/) with the tex
 We are committed to enhancing our blog continually, delivering [valuable content](#) and an exceptional user experience. Stay tuned for [regular updates](#), insightful articles, and engaging discussions.
 
 Feel free to modify and adapt this text to accurately reflect the specifics of your blog. Enjoy blogging!
-```
