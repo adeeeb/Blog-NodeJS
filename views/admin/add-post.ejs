@@ -1,0 +1,37 @@
+<a href="/dashboard">&larr; Back</a>
+<div class="admin-title">
+  <h2>Add New Post</h2>
+</div>
+
+<form action="/add-post" method="POST" enctype="multipart/form-data">
+  <label for="title"><b>Title</b></label>
+  <input type="text" placeholder="Post Title" name="title" />
+
+  <label for="body"><b>Content</b></label>
+  <textarea name="body" id="area1" cols="50" rows="10"></textarea>
+  <div class="add-image">
+    <label for="inputFile">Upload Image</label>
+    <input name="avatar" id="inputFile" type="file" class="btn-file" />
+    <br />
+    <img
+      src="../img/hero_image.jpg"
+      alt="computers , laptop , mobile and developer"
+      class="hero-image"
+      id="articaleImage"
+      width="600"
+      height="200"
+    />
+  </div>
+
+  <input type="submit" value="Add" class="btn" />
+</form>
+
+<script src="https://cdn.ckeditor.com/4.23.0-lts/full/ckeditor.js"></script>
+<script>
+  CKEDITOR.replace("area1");
+</script>
+<script>
+  inputFile.addEventListener("change", (eo) => {
+    articaleImage.src = URL.createObjectURL(eo.target.files[0]);
+  });
+</script>

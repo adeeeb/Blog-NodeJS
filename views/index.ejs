@@ -1,0 +1,31 @@
+<div class="author">
+  <h1 class="author_heading">Hi , I am Adeeb.</h1>
+  <p class="author_body">web Developer,Content creator and Graphic Designer.</p>
+</div>
+
+<img
+  src="./img/hero_image.jpg"
+  alt="computers , laptop , mobile and developer"
+  class="hero-image"
+  width="981"
+  height="528"
+/>
+
+<section class="articals">
+  <h2 class="articles_heading">Latest Posts</h2>
+  <ul class="article-ul">
+    <% data.forEach(post => { %>
+    <li>
+      <a href="/post/<%= post._id %>">
+        <span><%= post.title %></span>
+        <span class="article-list_date"
+          ><%= moment(post.createdAt).fromNow(); %></span
+        >
+      </a>
+    </li>
+    <% }) %>
+  </ul>
+  <% if (nextPage !== null) { %>
+  <a href="/?page=<%= nextPage %>" class="pagination">&lt; View Older Posts</a>
+  <% } %>
+</section>

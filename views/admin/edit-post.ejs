@@ -1,0 +1,45 @@
+<a href="/dashboard">&larr; Back</a>
+<div class="admin-title">
+  <h2>View / Edit Post</h2>
+
+  <form action="/delete-post/<%= data._id %>?_method=DELETE" method="POST">
+    <input type="submit" value="Delete" class="btn-delete btn" />
+  </form>
+</div>
+
+<form
+  action="/edit-post/<%= data._id %>?_method=PUT"
+  method="POST"
+  enctype="multipart/form-data"
+>
+  <label for="title"><b>Title</b></label>
+  <input
+    type="text"
+    placeholder="Post Title"
+    name="title"
+    value="<%= data.title %>"
+  />
+
+  <label for="body"><b>Content</b></label>
+  <textarea name="body" cols="50" rows="10"><%= data.body %></textarea>
+  <div class="add-image">
+    <label for="inputFile">Upload Image</label>
+    <input name="avatar" id="inputFile" type="file" class="btn-file" />
+    <br />
+    <img
+      src="<%= data.articaleImage %>"
+      alt="computers , laptop , mobile and developer"
+      class="hero-image"
+      id="articaleImage"
+      width="600"
+      height="200"
+    />
+  </div>
+
+  <input type="submit" value="Update" class="btn" />
+</form>
+<script>
+  inputFile.addEventListener("change", (eo) => {
+    articaleImage.src = URL.createObjectURL(eo.target.files[0]);
+  });
+</script>
