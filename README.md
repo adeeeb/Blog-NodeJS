@@ -36,6 +36,8 @@ Our blog follows the [Model-View-Controller (MVC)](https://developer.mozilla.org
 
 We have seamlessly integrated the [CKEditor](https://ckeditor.com/) with the text area, allowing for beautiful and captivating text additions to the blog. This enhances the overall user experience.
 
+![Blog Mockup](https://github.com/adeeeb/Blog-NodeJS/blob/main/public/img/186.jpg)
+
 ## Stay Connected
 
 We are committed to enhancing our blog continually, delivering [valuable content](#) and an exceptional user experience. Stay tuned for [regular updates](#), insightful articles, and engaging discussions.
